@@ -1,0 +1,448 @@
+-- Gui to Lua
+-- Version: 3.2
+
+-- Instances:
+
+local Exe = Instance.new("ScreenGui")
+local Open = Instance.new("Frame")
+local UICorner = Instance.new("UICorner")
+local TextBox = Instance.new("TextBox")
+local UICorner_2 = Instance.new("UICorner")
+local topbar = Instance.new("Frame")
+local UICorner_3 = Instance.new("UICorner")
+local TextLabel = Instance.new("TextLabel")
+local TextLabel_2 = Instance.new("TextLabel")
+local Sfixe = Instance.new("ImageLabel")
+local Settings = Instance.new("ImageButton")
+local UICorner_4 = Instance.new("UICorner")
+local Clear = Instance.new("ImageButton")
+local UICorner_5 = Instance.new("UICorner")
+local Execute = Instance.new("ImageButton")
+local UICorner_6 = Instance.new("UICorner")
+local InfiniteYield = Instance.new("ImageButton")
+local UICorner_7 = Instance.new("UICorner")
+local Gui = Instance.new("Frame")
+local UICorner_8 = Instance.new("UICorner")
+local topbar_2 = Instance.new("Frame")
+local UICorner_9 = Instance.new("UICorner")
+local ImageLabel = Instance.new("ImageLabel")
+local UICorner_10 = Instance.new("UICorner")
+local TextLabel_3 = Instance.new("TextLabel")
+local CloseSettings = Instance.new("TextButton")
+local UICorner_11 = Instance.new("UICorner")
+local CloseGame = Instance.new("TextButton")
+local UICorner_12 = Instance.new("UICorner")
+local Warn = Instance.new("Frame")
+local TextLabel_4 = Instance.new("TextLabel")
+local UICorner_13 = Instance.new("UICorner")
+local TextLabel_5 = Instance.new("TextLabel")
+
+--Properties:
+
+Exe.Name = "Exe"
+Exe.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+Exe.ZIndexBehavior = Enum.ZIndexBehavior.Sibling
+
+Open.Name = "Open"
+Open.Parent = Exe
+Open.BackgroundColor3 = Color3.fromRGB(172, 82, 202)
+Open.BackgroundTransparency = 0.200
+Open.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Open.BorderSizePixel = 0
+Open.Position = UDim2.new(0.303624392, 0, 0.214326873, 0)
+Open.Size = UDim2.new(0, 553, 0, 312)
+
+UICorner.Parent = Open
+
+TextBox.Parent = Open
+TextBox.BackgroundColor3 = Color3.fromRGB(75, 23, 84)
+TextBox.BackgroundTransparency = 0.350
+TextBox.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextBox.BorderSizePixel = 0
+TextBox.Position = UDim2.new(0.0610686131, 0, 0.211224288, 0)
+TextBox.Size = UDim2.new(0, 490, 0, 204)
+TextBox.Font = Enum.Font.SourceSans
+TextBox.PlaceholderColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.Text = "--Script Here\\n\\nTo close the gui press RightControl on keyboard"
+TextBox.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextBox.TextSize = 15.000
+TextBox.TextWrapped = true
+TextBox.TextXAlignment = Enum.TextXAlignment.Left
+TextBox.TextYAlignment = Enum.TextYAlignment.Top
+
+UICorner_2.Parent = TextBox
+
+topbar.Name = "topbar"
+topbar.Parent = Open
+topbar.BackgroundColor3 = Color3.fromRGB(50, 6, 46)
+topbar.BackgroundTransparency = 0.100
+topbar.BorderColor3 = Color3.fromRGB(0, 0, 0)
+topbar.BorderSizePixel = 0
+topbar.Position = UDim2.new(0.0592592582, 0, 0.028846154, 0)
+topbar.Size = UDim2.new(0, 490, 0, 40)
+
+UICorner_3.Parent = topbar
+
+TextLabel.Parent = topbar
+TextLabel.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.BackgroundTransparency = 1.000
+TextLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel.BorderSizePixel = 0
+TextLabel.Position = UDim2.new(-0.0341984965, 0, -0.075000003, 0)
+TextLabel.Size = UDim2.new(0, 200, 0, 50)
+TextLabel.Font = Enum.Font.Kalam
+TextLabel.Text = "Sfixe v2.5"
+TextLabel.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel.TextSize = 29.000
+TextLabel.TextWrapped = true
+
+TextLabel_2.Parent = topbar
+TextLabel_2.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_2.BackgroundTransparency = 1.000
+TextLabel_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_2.BorderSizePixel = 0
+TextLabel_2.Position = UDim2.new(0.176761299, 0, 0.075000003, 0)
+TextLabel_2.Size = UDim2.new(0, 96, 0, 37)
+TextLabel_2.Font = Enum.Font.Jura
+TextLabel_2.Text = "Lua"
+TextLabel_2.TextColor3 = Color3.fromRGB(23, 16, 122)
+TextLabel_2.TextSize = 15.000
+TextLabel_2.TextWrapped = true
+
+Sfixe.Name = "Sfixe"
+Sfixe.Parent = topbar
+Sfixe.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+Sfixe.BackgroundTransparency = 1.000
+Sfixe.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Sfixe.BorderSizePixel = 0
+Sfixe.Position = UDim2.new(0.0185941104, 0, 0.0664028153, 0)
+Sfixe.Size = UDim2.new(0, 35, 0, 34)
+Sfixe.Image = "http://www.roblox.com/asset/?id=102117880073770"
+
+Settings.Name = "Settings"
+Settings.Parent = Open
+Settings.BackgroundColor3 = Color3.fromRGB(149, 57, 140)
+Settings.BackgroundTransparency = 1.000
+Settings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Settings.BorderSizePixel = 0
+Settings.Position = UDim2.new(0.887037039, 0, 0.0419180468, 0)
+Settings.Size = UDim2.new(0, 33, 0, 31)
+Settings.Image = "rbxassetid://4859271243"
+
+UICorner_4.Parent = Settings
+
+Clear.Name = "Clear"
+Clear.Parent = Open
+Clear.BackgroundColor3 = Color3.fromRGB(65, 26, 68)
+Clear.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Clear.BorderSizePixel = 0
+Clear.Position = UDim2.new(0.887037039, 0, 0.878833592, 0)
+Clear.Size = UDim2.new(0, 33, 0, 31)
+Clear.Image = "http://www.roblox.com/asset/?id=77591373079370"
+
+UICorner_5.Parent = Clear
+
+Execute.Name = "Execute"
+Execute.Parent = Open
+Execute.BackgroundColor3 = Color3.fromRGB(65, 26, 68)
+Execute.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Execute.BorderSizePixel = 0
+Execute.Position = UDim2.new(0.183333337, 0, 0.879084945, 0)
+Execute.Size = UDim2.new(0, 33, 0, 31)
+Execute.Image = "http://www.roblox.com/asset/?id=111240947495561"
+
+UICorner_6.Parent = Execute
+
+InfiniteYield.Name = "InfiniteYield"
+InfiniteYield.Parent = Open
+InfiniteYield.BackgroundColor3 = Color3.fromRGB(65, 26, 68)
+InfiniteYield.BorderColor3 = Color3.fromRGB(0, 0, 0)
+InfiniteYield.BorderSizePixel = 0
+InfiniteYield.Position = UDim2.new(0.0592592582, 0, 0.879084945, 0)
+InfiniteYield.Size = UDim2.new(0, 55, 0, 27)
+InfiniteYield.Image = "http://www.roblox.com/asset/?id=71107287046988"
+
+UICorner_7.Parent = InfiniteYield
+
+Gui.Name = "Gui"
+Gui.Parent = Exe
+Gui.BackgroundColor3 = Color3.fromRGB(2, 10, 29)
+Gui.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Gui.BorderSizePixel = 0
+Gui.Position = UDim2.new(0.314114988, 0, 0.217678085, 0)
+Gui.Size = UDim2.new(0, 540, 0, 306)
+Gui.Visible = false
+
+UICorner_8.Parent = Gui
+
+topbar_2.Name = "topbar"
+topbar_2.Parent = Gui
+topbar_2.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+topbar_2.BorderColor3 = Color3.fromRGB(0, 0, 0)
+topbar_2.BorderSizePixel = 0
+topbar_2.Size = UDim2.new(0, 540, 0, 40)
+
+UICorner_9.Parent = topbar_2
+
+ImageLabel.Parent = Gui
+ImageLabel.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BackgroundTransparency = 1.000
+ImageLabel.BorderColor3 = Color3.fromRGB(0, 0, 0)
+ImageLabel.BorderSizePixel = 0
+ImageLabel.Size = UDim2.new(0, 41, 0, 40)
+ImageLabel.Image = "rbxassetid://4859271243"
+
+UICorner_10.Parent = ImageLabel
+
+TextLabel_3.Parent = Gui
+TextLabel_3.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.BackgroundTransparency = 1.000
+TextLabel_3.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_3.BorderSizePixel = 0
+TextLabel_3.Position = UDim2.new(-0.0481481478, 0, -0.0163398702, 0)
+TextLabel_3.Size = UDim2.new(0, 200, 0, 50)
+TextLabel_3.Font = Enum.Font.SourceSans
+TextLabel_3.Text = "Settings"
+TextLabel_3.TextColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_3.TextSize = 20.000
+
+CloseSettings.Name = "CloseSettings"
+CloseSettings.Parent = Gui
+CloseSettings.BackgroundColor3 = Color3.fromRGB(38, 38, 38)
+CloseSettings.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseSettings.BorderSizePixel = 0
+CloseSettings.Position = UDim2.new(0.922222197, 0, 0.0130718956, 0)
+CloseSettings.Size = UDim2.new(0, 34, 0, 32)
+CloseSettings.Font = Enum.Font.SourceSans
+CloseSettings.Text = "X"
+CloseSettings.TextColor3 = Color3.fromRGB(255, 0, 0)
+CloseSettings.TextSize = 27.000
+
+UICorner_11.CornerRadius = UDim.new(1, 0)
+UICorner_11.Parent = CloseSettings
+
+CloseGame.Name = "CloseGame"
+CloseGame.Parent = Gui
+CloseGame.BackgroundColor3 = Color3.fromRGB(2, 1, 13)
+CloseGame.BorderColor3 = Color3.fromRGB(0, 0, 0)
+CloseGame.BorderSizePixel = 0
+CloseGame.Position = UDim2.new(0.0425925925, 0, 0.212418303, 0)
+CloseGame.Size = UDim2.new(0, 157, 0, 33)
+CloseGame.Font = Enum.Font.SourceSans
+CloseGame.Text = "Close Game"
+CloseGame.TextColor3 = Color3.fromRGB(255, 255, 255)
+CloseGame.TextSize = 20.000
+
+UICorner_12.Parent = CloseGame
+
+Warn.Name = "Warn"
+Warn.Parent = Exe
+Warn.BackgroundColor3 = Color3.fromRGB(126, 0, 2)
+Warn.BackgroundTransparency = 0.300
+Warn.BorderColor3 = Color3.fromRGB(0, 0, 0)
+Warn.BorderSizePixel = 0
+Warn.Position = UDim2.new(0.736623764, 0, 0.882892549, 0)
+Warn.Size = UDim2.new(0, 300, 0, 54)
+Warn.Visible = false
+
+TextLabel_4.Parent = Warn
+TextLabel_4.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_4.BackgroundTransparency = 1.000
+TextLabel_4.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.BorderSizePixel = 0
+TextLabel_4.Position = UDim2.new(0, 0, 0.142857149, 0)
+TextLabel_4.Size = UDim2.new(0, 294, 0, 50)
+TextLabel_4.Font = Enum.Font.Unknown
+TextLabel_4.Text = "To open the gui press RightControl"
+TextLabel_4.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_4.TextSize = 22.000
+
+UICorner_13.Parent = Warn
+
+TextLabel_5.Parent = Warn
+TextLabel_5.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
+TextLabel_5.BackgroundTransparency = 1.000
+TextLabel_5.BorderColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.BorderSizePixel = 0
+TextLabel_5.Position = UDim2.new(-0.103333332, 0, -0.122751869, 0)
+TextLabel_5.Size = UDim2.new(0, 108, 0, 41)
+TextLabel_5.Font = Enum.Font.Code
+TextLabel_5.Text = "Info"
+TextLabel_5.TextColor3 = Color3.fromRGB(0, 0, 0)
+TextLabel_5.TextSize = 18.000
+
+-- Scripts:
+
+local function LLFJFMG_fake_script() -- TextBox.LocalScript 
+	local script = Instance.new('LocalScript', TextBox)
+
+	local textBox = script.Parent
+	
+	textBox.ClearTextOnFocus = false -- Yazılanları silmesin
+	textBox.MultiLine = true -- Enter ile alt satıra geçebilsin
+	
+	local function formatCode()
+		local lines = string.split(textBox.Text, "\n")
+		local formatted = ""
+	
+		for i, line in ipairs(lines) do
+			formatted = formatted .. "[" .. i .. "] " .. line .. "\n"
+		end
+	
+		-- Event tetiklenmesin diye geçici olarak bağlantıyı kes
+		textBox:GetPropertyChangedSignal("Text"):DisconnectAll()
+	
+		textBox.Text = formatted
+		textBox.CursorPosition = #textBox.Text + 1
+	end
+	
+	-- Enter ile satır eklendiğinde çalıştır
+	textBox.FocusLost:Connect(function(enterPressed)
+		if enterPressed then
+			formatCode()
+		end
+	end)
+	
+	textBox:GetPropertyChangedSignal("Text"):Connect(function()
+		local currentText = textBox.Text
+		local lines = string.split(currentText, "\n")
+	
+		-- Aynı satır numarasını tekrar eklememek için kontrol
+		for i, line in ipairs(lines) do
+			if not line:find("^%[%d+%]") then
+				formatCode()
+				break
+			end
+		end
+	end)
+	
+end
+coroutine.wrap(LLFJFMG_fake_script)()
+local function LFPMUSE_fake_script() -- Open.Draggable 
+	local script = Instance.new('LocalScript', Open)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(LFPMUSE_fake_script)()
+local function NBMN_fake_script() -- Open.OpenGui 
+	local script = Instance.new('LocalScript', Open)
+
+	local Gui = script.Parent
+	local Warn = script.Parent.Parent.Warn
+	
+	local function onKeyPress(input)
+		if input.KeyCode == Enum.KeyCode.RightControl then
+			if Gui.Visible == true then
+				Gui.Visible = false
+				Warn.Visible = true
+				wait(5)
+				Warn.Visible = false
+			else
+				Gui.Visible = true
+			end
+		end
+	end
+	
+	game:GetService("UserInputService").InputBegan:Connect(onKeyPress)
+end
+coroutine.wrap(NBMN_fake_script)()
+local function MIHGQBK_fake_script() -- Settings.LocalScript 
+	local script = Instance.new('LocalScript', Settings)
+
+	local open = script.Parent.Parent
+	local gui = script.Parent.Parent.Parent.Gui
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		open.Visible = false
+		gui.Visible = true
+	end)
+end
+coroutine.wrap(MIHGQBK_fake_script)()
+local function RUGA_fake_script() -- Clear.LocalScript 
+	local script = Instance.new('LocalScript', Clear)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		script.Parent.Parent.TextBox.Text = ""
+	end)
+end
+coroutine.wrap(RUGA_fake_script)()
+local function HMCG_fake_script() -- Execute.LocalScript 
+	local script = Instance.new('LocalScript', Execute)
+
+	local button = script.Parent
+	local textbox = script.Parent.Parent.TextBox
+	button.MouseButton1Click:Connect(function()
+		loadstring(textbox.Text)()
+	end)
+end
+coroutine.wrap(HMCG_fake_script)()
+local function HKKBXQA_fake_script() -- InfiniteYield.LocalScript 
+	local script = Instance.new('LocalScript', InfiniteYield)
+
+	local button = script.Parent -- Butonun konumunu belirtin, örneğin GUI içinde
+	
+	button.MouseButton1Click:Connect(function()
+		local success, error = pcall(function()
+			loadstring(game:HttpGet("https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source"))()
+		end)
+	
+		if not success then
+			warn("Error: " .. error)
+		end
+	end)
+	
+end
+coroutine.wrap(HKKBXQA_fake_script)()
+local function TTSG_fake_script() -- CloseSettings.LocalScript 
+	local script = Instance.new('LocalScript', CloseSettings)
+
+	local Open = script.Parent.Parent.Parent.Open
+	local gui = script.Parent.Parent
+	
+	script.Parent.MouseButton1Click:Connect(function()
+		gui.Visible = false
+		Open.Visible = true
+	end)
+end
+coroutine.wrap(TTSG_fake_script)()
+local function GHXK_fake_script() -- CloseGame.LocalScript 
+	local script = Instance.new('LocalScript', CloseGame)
+
+	script.Parent.MouseButton1Click:Connect(function()
+		game.Players.LocalPlayer:Destroy()
+	end)
+end
+coroutine.wrap(GHXK_fake_script)()
+local function PMWK_fake_script() -- Gui.Draggable 
+	local script = Instance.new('LocalScript', Gui)
+
+	script.Parent.Draggable = true
+	script.Parent.Active = true
+end
+coroutine.wrap(PMWK_fake_script)()
+local function PFCPCXN_fake_script() -- Exe.ExeGuiLocal 
+	local script = Instance.new('LocalScript', Exe)
+
+	local ReplicatedStorage = game:GetService("ReplicatedStorage")
+	local ExecuteCodeEvent = ReplicatedStorage:WaitForChild("ExecuteCodeEvent")
+	
+	local exeGui = script.Parent
+	local openFrame = exeGui:FindFirstChild("Open")
+	if not openFrame then return end
+	
+	local textBox = openFrame:FindFirstChild("TextBox")
+	local executeBtn = openFrame:FindFirstChild("Execute")
+	
+	if textBox and executeBtn then
+	    executeBtn.MouseButton1Click:Connect(function()
+	        local code = textBox.Text
+	        if code and code ~= "" then
+	            ExecuteCodeEvent:FireServer(code)
+	        end
+	    end)
+	end
+	
+	
+end
+coroutine.wrap(PFCPCXN_fake_script)()
